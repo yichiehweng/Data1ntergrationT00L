@@ -5,8 +5,8 @@ var sql = require('mssql');
 app.get('/', function (req, res) {
 
     var config = {
-        user: 'sa',
-        password: 'password',
+        user: '',
+        password: '',
         server: 'localhost\\MSSQLSERVER', 
         database: 'NEHRDespensedMedicine'
     };
