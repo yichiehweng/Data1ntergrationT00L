@@ -1,9 +1,5 @@
 {
-  "type": "node",
-  "protocol": "inspector",
-  "request": "launch",
-  "program": "${workspaceRoot}/app.js",
-
+ 
   "name": "data1ntergration-t00-l",
   "version": "0.0.0",
   "description": "Data1ntergrationT00L",
