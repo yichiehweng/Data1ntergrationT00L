@@ -8,13 +8,13 @@ app.get('/', function (req, res) {
         user: '',
         password: '',
         server: 'localhost\\MSSQLSERVER', 
-        database: 'NEHRDespensedMedicine'
+        database: 'DespensedMedicine'
     };
 
     sql.connect(config, function (err) {
         if (err) console.log(err);
         var request = new sql.Request();
-        request.query("select COLUMN_NAME from NEHRDespensedMedicine.INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'PatientProfile'", function (err, result) {
+        request.query("select COLUMN_NAME from DespensedMedicine.INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'PatientProfile'", function (err, result) {
             if (err) console.log(err);
             res.send(result);
         });
